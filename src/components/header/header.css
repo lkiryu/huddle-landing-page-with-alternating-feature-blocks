@@ -25,6 +25,11 @@
     box-shadow: 0 0 5px 1px hsl(0, 0%, 80%);
     color: hsl(192, 100%, 9%);
     font-weight: 700;
+    transition: 0.3s ease-in;
+}
+
+.header-top .button:hover{
+    opacity: 80%;
 }
 
 .hero{
@@ -58,6 +63,11 @@
     box-shadow: 0 0 5px 1px hsl(0, 0%, 80%);
     color: hsl(0, 0%, 100%);
     font-weight: 700;
+    transition: 0.3s ease-in;
+}
+
+.info .button:hover{
+    opacity: 60%;
 }
 
 .hero img{

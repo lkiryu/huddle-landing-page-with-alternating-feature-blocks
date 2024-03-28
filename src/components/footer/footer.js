@@ -26,12 +26,12 @@ const Footer = () => {
                             <p>example@huddle.com</p>
                         </li>
                     </ul>
-                    <ul>
+                    <ul className="links">
                         <li><a href='/'>About Us</a></li>
                         <li><a href='/'>What We Do</a></li>
                         <li><a href='/'>FAQ</a></li>
                     </ul>
-                    <ul>
+                    <ul className="links">
                         <li><a href='/'>Career</a></li>
                         <li><a href='/'>Blog</a></li>
                         <li><a href='/'>Contact Us</a></li>

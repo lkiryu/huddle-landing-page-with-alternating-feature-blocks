@@ -62,4 +62,9 @@
     background-color: hsl(322, 100%, 66%);
     padding: 30px 90px;
     border-radius: 60px;
+    transition: 0.3s ease-in;
+}
+
+.ready-to-build .button:hover{
+    opacity: 60%;
 }
