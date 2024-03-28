@@ -19,7 +19,7 @@ const Footer = () => {
                         <p>+1-543-123-4567</p>
                     </li>
                     <li className="email">
-                    <i class="fa-regular fa-envelope"></i>
+                    <i className="fa-regular fa-envelope"></i>
                     <p>example@huddle.com</p>
                     </li>
                 </ul>

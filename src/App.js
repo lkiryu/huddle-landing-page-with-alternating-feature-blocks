@@ -1,5 +1,6 @@
-import './App.css';
 import HuddleLandingPage from './components/huddleLandingPage/huddleLandingPage';
+
+import './App.css';
 
 function App() {
   return (

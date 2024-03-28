@@ -2,10 +2,12 @@ import React from "react";
 import illustrationMockups from '../../images/illustration-mockups.svg'
 import logo from '../../images/logo.svg'
 
+import './header.css'
+
 const Header = () => {
     return (
         <header className="header">
-            <div>
+            <div className="header-top">
                 <a href="/">
                     <img src={logo} alt="logo"></img>
                 </a>

@@ -1,0 +1,65 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(../../images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: 40px 0;
+}
+
+.header-top .button{
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px 45px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 1px hsl(0, 0%, 80%);
+    color: hsl(192, 100%, 9%);
+    font-weight: 700;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin-bottom: 40px;
+}
+
+.hero .info{
+    width: 510px;
+}
+
+.info .title{
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: hsl(192, 100%, 9%);
+}
+
+.info .description{
+    color: hsl(192, 100%, 9%);
+    margin-bottom: 40px;
+}
+
+.info .button{
+    background-color: hsl(322, 100%, 66%);
+    padding: 15px 45px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 1px hsl(0, 0%, 80%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.hero img{
+    width: 700px;
+}
