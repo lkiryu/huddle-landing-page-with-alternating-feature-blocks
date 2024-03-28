@@ -3,6 +3,8 @@ import growTogether from '../../images/illustration-grow-together.svg'
 import flowingConversations from '../../images/illustration-flowing-conversation.svg'
 import yourUsers from '../../images/illustration-your-users.svg'
 
+import './section.css'
+
 const Section = () => {
     return (
         <section className="section">
@@ -15,12 +17,12 @@ const Section = () => {
                 <img src={growTogether} alt="grow-together"></img>
             </div>
             <div className="card">
+                <img src={flowingConversations} alt="flowing-conversations"></img>
                 <div className="card-info">
                     <h2 className="card-title">Flowing Conversations</h2>
                     <p className="card-description">You wouldn't paginate a conversation in real life, so why do it online? Our threads
                         have just-in-time loading for a more natural flow.</p>
                 </div>
-                <img src={flowingConversations} alt="flowing-conversations"></img>
             </div>
             <div className="card">
                 <div className="card-info">
