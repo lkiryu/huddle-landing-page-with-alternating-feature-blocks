@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 80vw;
-    margin: 80px 0;
+    margin: 80px 0 200px;
     position: relative;
 }
 
@@ -44,11 +44,10 @@
     align-items: center;
     background-color: hsl(0, 0%, 100%);
     position: absolute;
-    display: none;
-    width: 50vw;
+    bottom: -380px;
     box-shadow: 0 0 5px 1px hsl(0, 0%, 90%);
     border-radius: 20px;
-    padding: 100px;
+    padding: 80px;
 }
 
 .ready-to-build h2{
