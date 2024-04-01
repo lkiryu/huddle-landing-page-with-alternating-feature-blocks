@@ -8,6 +8,8 @@
 }
 
 .footer-content{
+    display: flex;
+    flex-direction: column;
     width: 80vw;
     color: hsl(0, 0%, 100%);
 }
@@ -73,4 +75,34 @@
 .social li a i:hover{
     border: 1px solid hsl(322, 100%, 66%);
     color: hsl(322, 100%, 66%);
+}
+
+.copyright{
+    align-self: flex-end;
+}
+
+@media(max-width:1200px){
+    .footer-content{
+        width: 90vw;
+        font-size: 16px;
+    }
+
+    .location{
+        width: 350px;
+    }
+}
+
+@media(max-width:800px){
+    .footer-content .info {
+        flex-direction: column;
+    }
+
+    .footer-content{
+        align-items: center;
+    }
+
+    .copyright{
+        align-self: center;
+    }
+    
 }

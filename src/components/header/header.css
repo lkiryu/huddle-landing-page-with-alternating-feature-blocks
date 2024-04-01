@@ -1,4 +1,4 @@
-.header{
+.header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,7 +10,7 @@
     width: 100%;
 }
 
-.header-top{
+.header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@
     margin: 40px 0;
 }
 
-.header-top .button{
+.header-top .button {
     background-color: hsl(0, 0%, 100%);
     padding: 15px 45px;
     border-radius: 30px;
@@ -28,11 +28,11 @@
     transition: 0.3s ease-in;
 }
 
-.header-top .button:hover{
+.header-top .button:hover {
     opacity: 80%;
 }
 
-.hero{
+.hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,23 +40,23 @@
     margin-bottom: 40px;
 }
 
-.hero .info{
+.hero .info {
     width: 510px;
 }
 
-.info .title{
+.info .title {
     font-family: "Poppins", sans-serif;
     font-size: 40px;
     margin-bottom: 20px;
     color: hsl(192, 100%, 9%);
 }
 
-.info .description{
+.info .description {
     color: hsl(192, 100%, 9%);
     margin-bottom: 40px;
 }
 
-.info .button{
+.info .button {
     background-color: hsl(322, 100%, 66%);
     padding: 15px 45px;
     border-radius: 30px;
@@ -66,10 +66,71 @@
     transition: 0.3s ease-in;
 }
 
-.info .button:hover{
+.info .button:hover {
     opacity: 60%;
 }
 
-.hero img{
+.hero img {
     width: 700px;
+}
+
+@media(max-width:1440px) {
+
+    .hero .info,
+    .hero img {
+        width: 500px;
+    }
+}
+
+@media(max-width:1200px) {
+
+    .header-top,
+    .hero {
+        width: 90vw;
+    }
+
+    .hero .info,
+    .hero img {
+        width: 400px;
+    }
+
+    .info .title {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:800px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        margin-top: 60px;
+    }
+}
+
+@media(max-width:500px) {
+    .header-top .logo {
+        width: 150px;
+    }
+
+    .header-top .button {
+        padding: 10px;
+    }
+
+    .hero .info,
+    .hero img {
+        width: 300px;
+    }
+
+    .info .title {
+        font-size: 24px;
+    }
+
+    .header-top .button,
+    .info .description,
+    .info .button {
+        font-size: 16px;
+    }
 }

@@ -1,4 +1,4 @@
-.section{
+.section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +8,7 @@
     position: relative;
 }
 
-.section .card{
+.section .card {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,25 +19,29 @@
     margin-bottom: 40px;
 }
 
-.section .card-info{
+.section .card-info {
     width: 500px;
 }
 
-.card-info .card-title{
+.card-info .card-title {
     color: hsl(192, 100%, 9%);
     margin-bottom: 20px;
 }
 
-.card-info .card-description{
+.card-info .card-description {
     color: hsl(208, 11%, 55%);
     line-height: 28px;
 }
 
-.section .card img{
+.section .card img {
     width: 400px;
 }
 
-.ready-to-build{
+.card.middle {
+    flex-direction: row-reverse;
+}
+
+.ready-to-build {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,13 +54,13 @@
     padding: 80px;
 }
 
-.ready-to-build h2{
+.ready-to-build h2 {
     color: hsl(192, 100%, 9%);
     font-size: 40px;
     margin-bottom: 40px;
 }
 
-.ready-to-build .button{
+.ready-to-build .button {
     font-size: 25px;
     color: hsl(0, 0%, 100%);
     background-color: hsl(322, 100%, 66%);
@@ -65,6 +69,84 @@
     transition: 0.3s ease-in;
 }
 
-.ready-to-build .button:hover{
+.ready-to-build .button:hover {
     opacity: 60%;
+}
+
+@media(max-width:1440px) {
+    .section .card {
+        padding: 100px;
+    }
+
+    .section .card-info {
+        width: 400px;
+    }
+
+    .ready-to-build {
+        bottom: -350px;
+    }
+}
+
+@media(max-width:1200px) {
+    .section {
+        width: 90vw;
+    }
+
+    .section .card img {
+        width: 300px;
+    }
+}
+
+@media(max-width:800px) {
+    .section .card {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .card.middle {
+        flex-direction: column-reverse;
+    }
+
+    .section .card img {
+        margin-bottom: 40px;
+    }
+
+    .ready-to-build {
+        text-align: center;
+        bottom: -350px;
+        padding: 40px;
+    }
+
+    .ready-to-build .button {
+        font-size: 20px;
+        padding: 30px 60px;
+    }
+}
+
+@media(max-width:500px) {
+    .section {
+        margin: 80px 0 150px;
+    }
+
+    .section .card-info {
+        width: 100%;
+    }
+
+    .card-info .card-description {
+        font-size: 16px;
+    }
+
+    .ready-to-build {
+        bottom: -275px;
+    }
+
+    .ready-to-build h2 {
+        font-size: 22px;
+    }
+
+    .ready-to-build .button {
+        font-size: 16px;
+        padding: 15px 45px;
+    }
 }
